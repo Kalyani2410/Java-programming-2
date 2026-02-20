@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner obj=new Scanner(System.in);
+        char ch=obj.next().charAt(0);
+       String upvowel="AEIOU";
+        String lowvowel="aeiou";
+        String lowcons="bcdfghjklmnpqrstvwxyz";
+        String upcons="BCDFGHJKLMNPQRSTVWXYZ";
+        String number="0123456789";
+        if(upvowel.indexOf(ch)!=-1) System.out.println("Upper Vowel");
+        else if(lowvowel.indexOf(ch)!=-1) System.out.println("Lower Vowel");
+        else if(lowcons.indexOf(ch)!=-1) System.out.println("Lower Consonant");
+        else if(upcons.indexOf(ch)!=-1) System.out.println("Upper Consonant");
+        else if(number.indexOf(ch)!=-1) System.out.println("Digit");
+        else
+           System.out.println("Special Character") ;
+    }
+}
