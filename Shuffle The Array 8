@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner obj=new Scanner(System.in);
+        int size=obj.nextInt();
+        int arr[]=new int[size];
+       
+        for(int i=0;i<size;i++){
+            arr[i]=obj.nextInt();
+        }
+         int n=obj.nextInt();
+        int l=0,r=n;
+        while(l<n && r<size){
+          System.out.print(arr[l]+" "+arr[r]+" ");
+            l++;
+            r++;
+        }
+    }
+}
