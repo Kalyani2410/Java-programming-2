@@ -1,0 +1,47 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner obj=new Scanner(System.in);
+        char route=obj.next().charAt(0);
+        int time=obj.nextInt();
+        int charge=0;
+        if(route=='A'){
+            if(time<12){
+               charge=25;
+            System.out.println(charge); 
+            }
+            else{
+               charge=30;
+            System.out.println(charge); 
+            }
+        }
+        else if(route=='B'){
+            if(time<12){
+               charge=20;
+            System.out.println(charge); 
+            }
+            else{
+               charge=25;
+            System.out.println(charge); 
+            }
+        }
+        else{
+            if(time<12){
+               charge=15;
+            System.out.println(charge); 
+            }
+            else{
+               charge=20;
+            System.out.println(charge); 
+            }
+        }
+            
+    }
+}
