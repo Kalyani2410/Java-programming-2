@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner obj=new Scanner(System.in);
+        int a=obj.nextInt();
+        int b=obj.nextInt();
+        int count=0,rem;
+        while(a!=0){
+            rem=a%10;
+            if(rem==b){
+                count++;
+            }
+            a/=10;
+        }
+        System.out.println(count);
+    }
+}
