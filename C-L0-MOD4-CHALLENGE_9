@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner obj=new Scanner(System.in);
+        long a=obj.nextLong();
+        long count=0,rem,pow,sum=0;
+        long org=a;
+        long org2=a;
+        while(a!=0){ 
+            a/=10;
+            count++;  
+        }
+        while(org!=0){
+           rem=org%10; 
+           pow=(long)Math.pow(rem,count);
+            sum+=pow;   
+            org/=10;    
+        }
+        if(org2==sum){
+            System.out.println("Armstrong number");
+        }
+        else
+            System.out.println("Not an Armstrong number");
+       
+    }
+}
