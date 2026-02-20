@@ -1,0 +1,47 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner obj=new Scanner(System.in);
+        int age=obj.nextInt();
+        String day=obj.next();
+        int tic=0;
+       if(age<=12){
+            if(day.equals("saturday") || day.equals("sunday")){
+               tic=80;
+               System.out.println(tic);
+           }
+           else{
+               tic=100;
+           System.out.println(tic);
+           }
+           
+       } 
+        else if(age>=13 && age<=59){
+            if(day.equals("saturday") || day.equals("sunday")){
+               tic=120;
+               System.out.println(tic);
+           }
+           else{
+               tic=150;
+           System.out.println(tic);
+           }
+        }
+        else{
+             if(day.equals("saturday") || day.equals("sunday")){
+               tic=70;
+               System.out.println(tic);
+           }
+           else{
+               tic=90;
+           System.out.println(tic);
+           }
+        }
+    }
+}
