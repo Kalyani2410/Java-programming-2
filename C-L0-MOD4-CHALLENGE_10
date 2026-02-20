@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner obj=new Scanner(System.in);
+    int n=obj.nextInt();
+    int sum=0,fact=1,temp=n,rem;
+        while(n!=0){
+            rem=n%10;
+            fact=1;
+        for(int i=1;i<=rem;i++){
+            fact*=i;
+        }
+            sum+=fact;
+            n/=10;
+}
+     if(sum==temp){
+         System.out.println("Strong Number");
+     }   
+        else
+            System.out.println("Not a strong number");
+    }
+}
