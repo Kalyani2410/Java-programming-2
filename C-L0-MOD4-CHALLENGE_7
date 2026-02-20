@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner obj=new Scanner(System.in);
+        long a=obj.nextLong();
+        long rem,rev=0;
+        long org=a;
+        while(a!=0){
+            rem=a%10;
+            rev=rev*10+rem;
+            a/=10;
+        }
+        if(rev==org){
+            System.out.println("Palindrome");
+        }
+        else
+            System.out.println("Not a Palindrome");
+    }
+}
