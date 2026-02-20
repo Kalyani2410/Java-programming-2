@@ -1,0 +1,49 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner obj=new Scanner(System.in);
+        int user=obj.nextInt();
+        int a=user/500;
+         System.out.println("Total number of notes:");
+        System.out.println("500 : "+a);
+        user=user-(a*500);
+        
+        int b=user/100;
+        System.out.println("100 : "+b);
+         user=user-(b*100);
+       
+        int c=user/50;
+        System.out.println("50 : "+c);
+         user=user-(c*50);
+        
+        
+        int d=user/20;
+        System.out.println("20 : "+d);
+         user=user-(d*20);
+        
+        int e=user/10;
+        System.out.println("10 : "+e);
+         user=user-(e*10);
+        
+        int f=user/5;
+        System.out.println("5 : "+f);
+         user=user-(f*5);
+        
+        int g=user/2;
+        System.out.println("2 : "+g);
+         user=user-(g*2);
+        
+        int h=user/1;
+        System.out.println("1 : "+h);
+         user=user-(h*1);
+        
+        
+    }
+}
